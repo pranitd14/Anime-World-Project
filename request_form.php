@@ -4,13 +4,17 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "anime";
+$database = "nime";
 
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Die if connection was not successful
 if (!$conn){
-    die("Sorry we failed to connect: ". mysqli_connect_error());
+    echo '<script>
+        alert("Sorry we failed to connect: '.mysqli_connect_error().'");
+        window.location.href="index.html";
+    </script>';
+    exit();
 }
 
 // Variables to be inserted into the table
