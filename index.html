@@ -212,12 +212,14 @@
                 <input type="text" name="a_name" placeholder="Anime Name" required><br>
                 <button type="submit" onclick="handleSubmit(event)">Submit Request</button>
             </form>
+             <div class="overlay">⚠ Form is not working because no database is connected yet.</div>
             <div id="response"></div>
             <div class="message" id="formMessage" style="display: none;">
                 <p>✨ Your request has been submitted successfully! ✨</p>
                 <button class="close-btn" onclick="dismissFormMessage()">×</button>
             </div>
         </div>
+
         <div class="end-msg">
             <h2>✨ Thank you for visiting Anime World! ✨</h2>
         </div>
