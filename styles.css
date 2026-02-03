@@ -7,6 +7,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: azure;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header {
@@ -186,6 +190,15 @@ nav a:hover {
 
 main {
   padding: 20px;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 
 .card {
@@ -444,4 +457,82 @@ form#animeForm button[type="submit"]:hover {
   align-items: center;
   font-size: 18px;
   border-radius: 8px;
+}
+
+/* Portfolio Note Styling */
+.portfolio-note {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  border-left: 4px solid #fff;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-note:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-note p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Success Popup Styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.popup-content h3 {
+  color: #28a745;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.popup-content p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.popup .close-btn {
+  padding: 10px 25px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  position: static;
+}
+
+.popup .close-btn:hover {
+  background: #555;
 }
