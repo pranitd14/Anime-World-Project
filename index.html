@@ -203,7 +203,7 @@
         </section>
     </main>
     <footer>
-        <div class="form-wrapper" id="formWrapper">
+        <!-- <div class="form-wrapper" id="formWrapper"> -->
             <form id="animeForm" method="POST" action="request_form.php">
                 <h2>Request an Anime</h2>
                 <p>Can't find your favorite anime? Request it here!</p>
@@ -212,7 +212,7 @@
                 <input type="text" name="a_name" placeholder="Anime Name" required><br>
                 <button type="submit" onclick="handleSubmit(event)">Submit Request</button>
             </form>
-             <div class="overlay">⚠ Form is not working because no database is connected yet.</div>
+             <!-- <div class="overlay">⚠ Form is not working because no database is connected yet.</div> -->
             <div id="response"></div>
             <div class="message" id="formMessage" style="display: none;">
                 <p>✨ Your request has been submitted successfully! ✨</p>
@@ -246,5 +246,6 @@
         });
     </script>
 </body>
+
 
 </html>
